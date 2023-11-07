@@ -4,6 +4,7 @@ import usdt from "../assets/usdt.png"
 import CMCtableTitle from "./cmc-table/cmcTableTitle"
 import CMCtableRow from "./cmc-table/cmcTableRow"
 
+
 const CMCtable = () => {
     return <div>
         <div>

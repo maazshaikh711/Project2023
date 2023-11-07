@@ -6,7 +6,8 @@ import Share from "../assets/svg/share"
 import BearishFilled from "./buttons/bearishFilled"
 import BullishFilled from "./buttons/bullishFilled"
 import Image from "next/image"
-
+import btc from "../assets/btc.png"
+import eth from "../assets/eth.png"
 const styles = {
     postAction: `flex items-center`,
     chatCard: `border-b border-gray-700 pb-6 mb-6`,

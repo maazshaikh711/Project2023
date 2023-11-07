@@ -12,7 +12,13 @@ import tera from '../assets/tera.png'
 import solana from '../assets/solana.png'
 import avalanche from '../assets/avalanche.png'
 import bnb from '../assets/bnb.png'
-import { useMoralis } from 'react-moralis'
+import shiba from '../assets/shiba.png'
+import uniswap from '../assets/uniswap.png'
+import polygon from '../assets/polygon.png'
+import polkadot from '../assets/polkadot.png'
+import dogecoin from '../assets/dogecoin.png'
+
+// import { useMoralis } from 'react-moralis'
 
 const styles = {
     coinDetails: `min-h-screen text-white`,

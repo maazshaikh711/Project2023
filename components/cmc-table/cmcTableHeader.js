@@ -1,6 +1,7 @@
 import ChevronDown from "../../assets/svg/chevronDown"
 import Info from "../../assets/svg/info"
 
+
 const styles = {
     textIcon: `flex items-center`
 }
@@ -17,7 +18,7 @@ const CMCtableHeader = () => {
             <th><div className={styles.textIcon}><p className="mr-2">Market Cap</p> <Info /></div></th>
             <th><div className={styles.textIcon}><p className="mr-2">Volume(24h)</p> <Info /></div></th>
             <th><div className={styles.textIcon}><p className="mr-2">Circulating Supply</p> <Info /></div></th>
-            <th>Last 7 days</th>
+            {/* <th>Last 7 days</th> */}
         </tr>
     </tbody>
 }

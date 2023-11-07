@@ -39,10 +39,10 @@ const CMCtableRow = ({
     'https://s3.coinmarketcap.com/generated/sparklines/web/7d/2781/7653.svg',
   ]
 
-  const getRandomGraph = () => {
-    const rndInt = Math.floor(Math.random() * 10) + 1
-    return graphImages[rndInt]
-  }
+  // const getRandomGraph = () => {
+  //   const rndInt = Math.floor(Math.random() * 10) + 1
+  //   return graphImages[rndInt]
+  // }
 
   const router = useRouter()
 
@@ -114,7 +114,7 @@ const CMCtableRow = ({
         </td>
 
         <td>
-          <Image src={getRandomGraph()} width={150} height={60} alt='' />
+          {/* <Image src={getRandomGraph()} width={150} height={60} alt='' /> */}
         </td>
 
         <td>

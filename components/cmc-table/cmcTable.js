@@ -7,10 +7,11 @@ import CMCtableRow from './cmcTableRow'
 const CMCtable = () => {
   let { getTopTenCoins } = useContext(CoinMarketContext)
   let [coinData, setCoinData] = useState(null)
-
+  let  [repeater,setRepeater]=useState(0)
   useEffect(() => {
     setData()
-  }, [])
+    setTimeout(() => setRepeater(prevState=>prevState+1),1000000)
+  }, [repeater])
 
   const setData = useCallback(async () => {
     try {
@@ -19,7 +20,7 @@ const CMCtable = () => {
 
       for (let i = 0; i < apiResponse.length; i++) {
         const element = apiResponse[i]
-        if (element.cmc_rank <= 10) filteredResponse.push(element)
+        if (element.cmc_rank <= 20) filteredResponse.push(element)
       }
 
       setCoinData(filteredResponse)

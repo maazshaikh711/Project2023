@@ -10,9 +10,16 @@ import tera from '../assets/tera.png'
 import solana from '../assets/solana.png'
 import avalanche from '../assets/avalanche.png'
 import bnb from '../assets/bnb.png'
-
+import shiba from '../assets/shiba.png'
+import uniswap from '../assets/uniswap.png'
+import polygon from '../assets/polygon.png'
+import polkadot from '../assets/polkadot.png'
+import dogecoin from '../assets/dogecoin.png'
+import dai from '../assets/dai.png'
+import wrappedbitcoin from '../assets/wrapped bitcoin.png'
+import tron from '../assets/tron.png'
 import { CoinMarketContext } from '../context/context'
-
+import Link from 'next/link'
 const styles = {
   coinNameRow: 'flex items-center',
   buyButton: `bg-[#1A1F3A] text-[#6188FF] p-1 px-3 text-sm rounded-lg cursor-pointer hover:opacity-50`,
@@ -132,7 +139,88 @@ const CoinNameRow = ({ name, icon, clicked }) => {
             alt=''
           />
         )
-
+        case 'Shiba Inu':
+          return (
+            <Image
+              src={shiba}
+              className='rounded-full'
+              width={20}
+              height={20}
+              alt=''
+            />
+          )
+          case 'Uniswap':
+            return (
+              <Image
+                src={uniswap}
+                className='rounded-full'
+                width={20}
+                height={20}
+                alt=''
+              />
+            )
+          case 'Polygon':
+              return (
+                <Image
+                  src={polygon}
+                  className='rounded-full'
+                  width={20}
+                  height={20}
+                  alt=''
+                />
+              )
+          case 'Polkadot':
+                return (
+                  <Image
+                    src={polkadot}
+                    className='rounded-full'
+                    width={20}
+                    height={20}
+                    alt=''
+                  />
+                )
+                case 'Dogecoin':
+                return (
+                  <Image
+                    src={dogecoin}
+                    className='rounded-full'
+                    width={20}
+                    height={20}
+                    alt=''
+                  />
+                )
+                case 'Dai':
+                  return (
+                    <Image
+                      src={dai}
+                      className='rounded-full'
+                      width={20}
+                      height={20}
+                      alt=''
+                    />
+                  )
+                  case 'TRON':
+                  return (
+                    <Image
+                      src={tron}
+                      className='rounded-full'
+                      width={20}
+                      height={20}
+                      alt=''
+                    />
+                  )
+                  case 'Wrapped Bitcoin':
+                  return (
+                    <Image
+                      src={wrappedbitcoin}
+                      className='rounded-full'
+                      width={20}
+                      height={20}
+                      alt=''
+                    />
+                  )
+      
+            
       default:
         return (
           <Image
@@ -152,16 +240,17 @@ const CoinNameRow = ({ name, icon, clicked }) => {
         <div className='mr-2'>{coinIcon()}</div>
         {name}
       </div>
-
+    <Link href="/swap/defiswap">
       <p>
         {name === 'Bitcoin' || name === 'Ethereum' || name === 'Tether' ? (
-          <span className={styles.buyButton} onClick={() => openModal()}>
-            Buy
+          <span className={styles.buyButton} >
+            Swap
           </span>
         ) : (
           <></>
         )}
       </p>
+      </Link>
     </div>
   )
 }

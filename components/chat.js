@@ -8,6 +8,7 @@ import Button from './button'
 import shiba from '../assets/shiba.png'
 import Image from 'next/image'
 
+
 const styles = {
   bullishLabel: `flex cursor-pointer active:bg-green-600 items-center text text-green-600 border border-green-600 h-min px-2 rounded-lg`,
   bearishLabel: `flex cursor-pointer active:bg-red-500 items-center text-[#EA3943] border border-red-600 h-min px-2 rounded-lg`,
@@ -26,8 +27,8 @@ const styles = {
 const Chat = () => {
   const [message, setMessage] = useState('')
   const [bullishValue, setBullishValue] = useState(true)
-
-  const { gun, getMessages, state } = useContext(GunContext)
+  
+    const { gun, getMessages, state } = useContext(GunContext)
 
   useEffect(() => {
     getMessages('GUN_REF_7')
@@ -89,8 +90,8 @@ const Chat = () => {
                 <Image alt='' src={shiba} width={70} height={70} />
               </div>
               <div className='text-left mr-10'>
-                <b>Drak</b>
-                <p className='text-gray-400'>@drakosi</p>
+                <b>Maaz</b>
+                <p className='text-gray-400'>@maazs</p>
               </div>
             </div>
 
@@ -143,7 +144,7 @@ const Chat = () => {
       <div className={styles.postButtonContainer}>
         <Button label='Post' onPress={sendMessage} />
       </div>
-      {formattedMessagesArray()
+       {formattedMessagesArray()
         .slice(0)
         .reverse()
         .map((message, index) => (
@@ -158,7 +159,8 @@ const Chat = () => {
             likes='2.7K'
             comments='19K'
           />
-        ))}
+        ))} 
+        
     </>
   )
 }
