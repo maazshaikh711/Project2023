@@ -15,7 +15,7 @@
     "@web3auth/web3auth": "^0.4.0",
     "alchemy-sdk": "^2.3.0",
     "antd": "^5.2.0",
-    "chart.js": "^3.9.1",
+    "chart.js": "^4.1.1",
     "ethers": "^5.7.0",
     "gun": "^0.2020.1235",
     "magic-sdk": "^8.1.0",
